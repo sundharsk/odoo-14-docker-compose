@@ -5,6 +5,8 @@ CHAT=$3
 # clone Odoo directory
 git clone --depth=1 https://github.com/sundharsk/odoo-14-docker-compose $DESTINATION
 rm -rf $DESTINATION/.git
+rm -rf $DESTINATION/docker_start.sh
+rm -rf $DESTINATION/instance.tf
 # set permission
 mkdir -p $DESTINATION/postgresql
 sudo chmod -R 777 $DESTINATION
