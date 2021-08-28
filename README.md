@@ -20,18 +20,24 @@ Steps to Install Odoo Instance :
 	$ sudo chmod -R 777 postgresql
 	
 Docker Container Management Commands:
-	• To start docker composer : docker-compose  up -d    # Tag -d is for to run the instance in detached mode
-	• To Stop the Container : docker-composer down
-	• To Restart the container : docker-compose restart
-	• To kill the container : docker-composer kill
-	• To list the running containers : docker-compose ps
-	• To list the build images : docker-compose images
+	• To start docker composer :
+	docker-compose  up -d    # Tag -d is for to run the instance in detached mode
+	• To Stop the Container
+	docker-composer down
+	• To Restart the container 
+	docker-compose restart
+	• To kill the container
+	docker-composer kill
+	• To list the running containers
+	docker-compose ps
+	• To list the build images 
+	docker-compose images
 
 Docker-Composer.yml
 	• This is the file which contains all the instructions to create a container ; 
 	• Default Instance running port is 10014 if you wish to change the port then you can change as mentioned below
 		ports:
- - "10014:8069" 
+ 		- "10014:8069" 
 	• Here you can find the list of services Odoo & PostgesSQL
 	
 Addon Folder
